@@ -1,3 +1,37 @@
 @import 'global.css';
 @import 'normalize.css';
 @import 'product.css';
+
+.container {
+    max-width: 1234px;
+    /*width: 1234px;*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.product-grid {
+    grid-column: 3 span;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.filters {
+    position: relative;
+}
+.filters-price__input {
+    width: 100%;
+}
+.fixed {
+    position: fixed;
+    top: 20px;
+    left: 0;
+}
+.height {
+    height: 3000px;
+}
